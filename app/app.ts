@@ -14,7 +14,8 @@ export class MyApp {
   constructor(private platform: Platform) {
     this.rootPage = TabsPage;
 
-    platform.ready().then(() => {
+    platform.ready().then((readySource) => {
+      console.log('Platform ready from', readySource);
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
