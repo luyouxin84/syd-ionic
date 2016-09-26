@@ -1,9 +1,0 @@
-.bar-container{
-	display: flex;
-	flex-direction: column;
-}
-.geobar{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-}

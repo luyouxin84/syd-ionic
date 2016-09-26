@@ -1,18 +1,37 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
-  </ion-navbar>
+    <ion-toolbar class="geobar" danger="">
+        <ion-buttons start="">
+            <button royal="">
+                <ion-icon name="search">
+                </ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-buttons start="">
+            <ion-icon name="content" style="color:white">
+                城市
+            </ion-icon>
+        </ion-buttons>
+        <ion-searchbar (input)="getItems($event)" placeholder="搜索全球城市、酒店、景点" >
+        </ion-searchbar>
+    </ion-toolbar>   
 </ion-header>
 
-<ion-content padding class="home">
-  <head-bar></head-bar>
-  <h2>Welcome to Ionic!Lu you xin</h2>
+<ion-content class="home" no-padding>
+    <head-bar>
+    </head-bar>
+    <h2>
+        Welcome to Ionic!Lu you xin
+    </h2>
     <p>
-    This starter project comes with simple tabs-based layout for apps
+        This starter project comes with simple tabs-based layout for apps
     that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>app/</code> directory to add or change tabs,
+    </p>
+    <p>
+        Take a look at the
+        <code>
+            app/
+        </code>
+        directory to add or change tabs,
     update any existing page or create new pages.
-  </p>
+    </p>
 </ion-content>

@@ -1,2 +1,17 @@
 .home {
 }
+.bar-container{
+	padding: 5px;
+	background-color: color($colors, mainbackcolor, base);
+	color: white
+}
+.fiveballmenu{
+	display: flex;
+	flex-wrap:nowrap;
+	flex-direction:horizontal;
+}
+.fiveballbutton{
+	flex-grow:1;
+	overflow: hidden;
+	flex-direction:vertical
+}
