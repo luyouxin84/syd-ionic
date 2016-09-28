@@ -1,8 +1,9 @@
 .home {
+  background-color: $main-back-color;
 }
 .bar-container{
 	padding: 5px;
-	background-color: $main-back-color;
+	background-color: $main-color-front;
 	color: white
 }
 .fiveballmenu{
@@ -19,5 +20,16 @@
 	flex-direction:column;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 9px;
+  color: white;
+}
+.main-table{
+  margin-left: 4%;
+  width: 92%;
+  color: white;
+  background-color: $main-color-front;
+  border-color: $main-back-color;
+}
+.main-table-cell{
+  padding: 8px;
 }
