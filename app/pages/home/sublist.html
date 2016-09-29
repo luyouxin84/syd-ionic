@@ -1,0 +1,12 @@
+<div class="sublist">
+  <div class="sub" *ngFor="let subjet of list;let i = index">
+        <div>
+          <img src="img/{{subjet.pic}}">
+        </div>
+        <div>
+          {{i}}
+          <h4>{{subjet.title}}</h4>
+          <h5>{{subjet.subtitil}}</h5>
+        </div>
+  </div>
+</div>
