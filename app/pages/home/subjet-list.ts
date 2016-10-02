@@ -11,7 +11,10 @@ import {Sub} from './sub';
 export class subjetList{
   //noinspection TypeScriptValidateTypes
 
-
+  public list:Sub[] = [
+    { id:1,title:'天下美景',subtitle:'|游览世界',pic:'tianxiameijing.png'},
+    { id:2,title:'游学夏令营',subtitle:'|环球暑期夏令营',pic:'youxuexialingying.png'}
+  ];
   constructor(){
 
   }

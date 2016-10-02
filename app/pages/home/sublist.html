@@ -1,12 +1,15 @@
 <div class="sublist">
-  <div class="sub" *ngFor="let subjet of list;let i = index">
+  <div class="sub" *ngFor="let subjet of list;let i = index;let even = even; let odd=odd">
         <div>
           <img src="img/{{subjet.pic}}">
         </div>
-        <div>
-          {{i}}
+        <div [ngClass]="{  odd: odd, even: even}" class="subjet-title">
           <h4>{{subjet.title}}</h4>
-          <h5>{{subjet.subtitil}}</h5>
+          {{subjet.subtitle}}
+          <div style="border:1px solid white">
+            查看详情
+          </div>
         </div>
+
   </div>
 </div>
