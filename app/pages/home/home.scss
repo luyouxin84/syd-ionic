@@ -51,5 +51,17 @@
 .subjet-title.even{
   position: absolute;
   z-index: 1;
-  top:20px;
+  top: 0;
+  padding: 5%;
+}
+.subjet-title.odd{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  padding: 5%;
+
+}
+.sub{
+  position: relative;
 }

@@ -18,6 +18,7 @@ export class TabsPage {
     this.tab1Root = HomePage;
     this.tab2Root = AboutPage;
     this.tab3Root = ContactPage;
+
     this.variableL = 'lu youxin';
   }
 }
