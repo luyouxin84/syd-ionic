@@ -1,10 +1,18 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+  <ion-toolbar>
+    <ion-buttons start>
+      <ion-icon name="pin"></ion-icon>
+      南宁市
+    </ion-buttons>
+    <ion-searchbar (input)="getItems($event)"></ion-searchbar>
+    <ion-buttons end>
+      <ion-icon name="call"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding class="about">
+  <table-guide>
+    loading....
+  </table-guide>
 </ion-content>
