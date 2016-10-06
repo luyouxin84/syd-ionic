@@ -3,16 +3,21 @@
  */
 import {Component} from '@angular/core';
 import  {Catalog} from './catalog';
+import {NgStyle} from '@angular/common';
 
 @Component({
   templateUrl:'build/pages/about/tableguide.html',
   selector:'table-guide',
+  directives:[NgStyle]
 
 })
 export class tableGuide{
   private cell_width:number;
   private items:Catalog[] = [];
   initlist() {
+    this.items.push({name : "12313", img :"my-icon1.png"})
+    this.items.push({name : "12313", img :"my-icon1.png"})
+    this.items.push({name : "12313", img :"my-icon1.png"})
     this.items.push({name : "12313", img :"my-icon1.png"})
   }
   constructor() {
