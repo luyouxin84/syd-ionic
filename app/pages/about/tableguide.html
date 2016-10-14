@@ -1,7 +1,7 @@
 <div class="table-guide-container">
 
-  <div [ngClass]="{width: cell_width}" text-center *ngFor="let item of items">
-    <img src="img/{{item.img}}">
+  <div [ngStyle]="{'width': cell_width + 'px'}" text-center *ngFor="let item of items">
+    <img src="img/{{item.img}}" width="60%" class="img_guilde">
     <p>{{item.name}}</p>
   </div>
 </div>
